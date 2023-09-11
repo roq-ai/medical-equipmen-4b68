@@ -1,0 +1,2572 @@
+[
+  {
+    "supplier": [
+      {
+        "id": "e32165f0-514d-4108-bbb1-5af42a881637",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "abc@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T22:13:19.160Z",
+        "updated_at": "2023-09-10T15:22:06.035Z"
+      },
+      {
+        "id": "dd0f4edd-b396-4744-814b-410052c53df8",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "xyz@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-11T03:47:21.571Z",
+        "updated_at": "2023-09-10T21:13:42.694Z"
+      },
+      {
+        "id": "e0db1479-15fb-4b3c-915d-51d693e4c9bb",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "4567891230",
+        "email_address": "123@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T01:12:32.216Z",
+        "updated_at": "2023-09-10T15:57:21.519Z"
+      },
+      {
+        "id": "717ee8d7-4851-4da5-9f46-244d84b17331",
+        "name": "456 Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "3216549870",
+        "email_address": "456@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T10:47:31.654Z",
+        "updated_at": "2023-09-10T13:19:10.379Z"
+      },
+      {
+        "id": "7cbaecb5-3349-4ab5-a41c-42104036d0da",
+        "name": "789 Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "7891234560",
+        "email_address": "789@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T11:44:31.643Z",
+        "updated_at": "2023-09-11T02:09:18.079Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "e7a39cf9-4381-486c-a932-ee0626bee6b9",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer A",
+        "model_number": "12345",
+        "serial_number": "ABCDE12345",
+        "created_at": "2023-09-10T14:53:21.932Z",
+        "updated_at": "2023-09-10T16:23:33.517Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "ba5be47c-191f-4075-a64c-39326201a065",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer B",
+        "model_number": "67890",
+        "serial_number": "FGHIJ67890",
+        "created_at": "2023-09-10T17:29:15.066Z",
+        "updated_at": "2023-09-10T17:08:20.820Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "6f63333b-cba5-4a83-8f7f-7ec3a3db19ac",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer C",
+        "model_number": "54321",
+        "serial_number": "KLMNO54321",
+        "created_at": "2023-09-10T21:13:16.095Z",
+        "updated_at": "2023-09-10T13:06:16.993Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "4f93334c-fda5-4525-a4d9-9d1a35005411",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer D",
+        "model_number": "09876",
+        "serial_number": "PQRST09876",
+        "created_at": "2023-09-10T09:21:35.123Z",
+        "updated_at": "2023-09-11T02:06:59.945Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "62048f76-6d99-42c0-b386-845c528d6de4",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer E",
+        "model_number": "13579",
+        "serial_number": "UVWXY13579",
+        "created_at": "2023-09-10T22:50:51.210Z",
+        "updated_at": "2023-09-10T20:59:30.952Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "0af9adfd-b23a-4dae-8cd3-6f03fb367b06",
+        "quantity": 50134,
+        "purchase_date": "2023-09-10T16:38:28.189Z",
+        "expiry_date": "2023-09-11T04:47:57.760Z",
+        "created_at": "2023-09-10T17:13:52.982Z",
+        "updated_at": "2023-09-10T20:33:18.423Z",
+        "equipment_id": "ba5be47c-191f-4075-a64c-39326201a065",
+        "supplier_id": "7cbaecb5-3349-4ab5-a41c-42104036d0da"
+      },
+      {
+        "id": "1852f6a7-1751-4ab1-9515-af3585d7869a",
+        "quantity": 13339,
+        "purchase_date": "2023-09-10T19:40:00.607Z",
+        "expiry_date": "2023-09-10T06:46:22.277Z",
+        "created_at": "2023-09-11T05:17:25.502Z",
+        "updated_at": "2023-09-11T03:36:32.218Z",
+        "equipment_id": "ba5be47c-191f-4075-a64c-39326201a065",
+        "supplier_id": "e0db1479-15fb-4b3c-915d-51d693e4c9bb"
+      },
+      {
+        "id": "baa7d894-48d7-47c7-88f9-56838ad7cc7f",
+        "quantity": 43022,
+        "purchase_date": "2023-09-10T18:43:53.214Z",
+        "expiry_date": "2023-09-10T11:18:06.296Z",
+        "created_at": "2023-09-10T13:49:19.418Z",
+        "updated_at": "2023-09-10T23:39:39.499Z",
+        "equipment_id": "4f93334c-fda5-4525-a4d9-9d1a35005411",
+        "supplier_id": "7cbaecb5-3349-4ab5-a41c-42104036d0da"
+      },
+      {
+        "id": "eab44358-ea6b-47d3-8abb-377ea166018b",
+        "quantity": 31351,
+        "purchase_date": "2023-09-10T12:13:46.006Z",
+        "expiry_date": "2023-09-11T00:35:53.157Z",
+        "created_at": "2023-09-10T14:42:33.421Z",
+        "updated_at": "2023-09-11T00:46:36.803Z",
+        "equipment_id": "e7a39cf9-4381-486c-a932-ee0626bee6b9",
+        "supplier_id": "e0db1479-15fb-4b3c-915d-51d693e4c9bb"
+      },
+      {
+        "id": "d9d213d8-4232-49a7-b9cb-db62637b1b1f",
+        "quantity": 83825,
+        "purchase_date": "2023-09-11T04:00:36.882Z",
+        "expiry_date": "2023-09-10T09:44:47.756Z",
+        "created_at": "2023-09-11T01:24:57.873Z",
+        "updated_at": "2023-09-10T18:48:08.538Z",
+        "equipment_id": "62048f76-6d99-42c0-b386-845c528d6de4",
+        "supplier_id": "dd0f4edd-b396-4744-814b-410052c53df8"
+      }
+    ],
+    "customer": [
+      {
+        "id": "643eef73-ad07-4c79-b1f7-8b32f6f8ac82",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "john.doe@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-11T05:33:24.642Z",
+        "updated_at": "2023-09-10T13:21:58.657Z"
+      },
+      {
+        "id": "dc98cbf7-9786-4ec1-bd6f-f60d5f1c67b0",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "jane.smith@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T12:28:57.293Z",
+        "updated_at": "2023-09-10T14:10:34.182Z"
+      },
+      {
+        "id": "781d5745-93d1-49d4-b07f-fa109d13b501",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "4567891230",
+        "email_address": "michael.brown@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T19:41:23.622Z",
+        "updated_at": "2023-09-10T10:55:37.811Z"
+      },
+      {
+        "id": "9b5742ef-ff8f-417b-a46b-f093ac3dce54",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "3216549870",
+        "email_address": "sarah.jones@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T23:38:33.932Z",
+        "updated_at": "2023-09-11T04:55:11.849Z"
+      },
+      {
+        "id": "04e713dc-5178-4be3-ab05-00892ff56221",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "7891234560",
+        "email_address": "david.wilson@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T16:51:30.673Z",
+        "updated_at": "2023-09-10T19:04:39.669Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0e65f697-5a01-4cfd-bbe1-70d878911224",
+        "email": "Avis_Schimmel84@hotmail.com",
+        "firstName": "Camden",
+        "lastName": "Reinger",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59998201",
+        "tenantId": null
+      },
+      {
+        "reference": "b0cfcad4-b8cb-4753-b8de-432b543bf9f0",
+        "email": "Jayda3@hotmail.com",
+        "firstName": "Daija",
+        "lastName": "Hahn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/72372813",
+        "tenantId": null
+      },
+      {
+        "reference": "5ad59a9d-491a-4f7a-8464-9ee5dceb28ec",
+        "email": "Eda_Pfannerstill89@hotmail.com",
+        "firstName": "Margie",
+        "lastName": "Schmitt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/998.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4feaf2ac-a272-454d-bb0b-4d6f5e842e08",
+        "email": "Marjolaine_McLaughlin82@yahoo.com",
+        "firstName": "Reymundo",
+        "lastName": "Bogisich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/750.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c4b23d8a-58e4-43c3-bc73-aec616c40fec",
+        "email": "Bridie_Lowe55@hotmail.com",
+        "firstName": "Makenzie",
+        "lastName": "Hane",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/25.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "1722d5a0-beea-4f79-919d-744481b6339f",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "supplier1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T07:59:41.450Z",
+        "updated_at": "2023-09-10T05:58:50.752Z"
+      },
+      {
+        "id": "1e46afca-b3ff-4331-b2c4-ebd4095d83c8",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "0987654321",
+        "email_address": "supplier2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T08:00:42.413Z",
+        "updated_at": "2023-09-11T05:24:15.307Z"
+      },
+      {
+        "id": "48d57198-31cf-4a72-b359-b28d47e58ae6",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "supplier3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T09:56:07.842Z",
+        "updated_at": "2023-09-10T08:11:10.317Z"
+      },
+      {
+        "id": "271e5ba6-8907-4cb9-8d25-4b0d0b8e3dd9",
+        "name": "Test Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "9999999999",
+        "email_address": "supplier4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T23:57:11.420Z",
+        "updated_at": "2023-09-10T06:47:12.566Z"
+      },
+      {
+        "id": "c69e69c6-b780-451a-a0c6-132a04a6f6c8",
+        "name": "Sample Supplier",
+        "contact_person": "Robert Wilson",
+        "contact_number": "1111111111",
+        "email_address": "supplier5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T12:46:16.967Z",
+        "updated_at": "2023-09-10T08:04:45.888Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "8bc1c7a4-e96e-40e6-bf33-14d6f744ea5f",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer A",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-11T04:41:47.676Z",
+        "updated_at": "2023-09-10T19:51:15.251Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "bdf3dbf9-6cd1-4ebc-b008-a9ccac3865f1",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer B",
+        "model_number": "67890",
+        "serial_number": "DEF456",
+        "created_at": "2023-09-10T20:11:39.326Z",
+        "updated_at": "2023-09-11T03:17:20.613Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "94f55a94-b293-49be-a304-a636936ec8ed",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer C",
+        "model_number": "54321",
+        "serial_number": "GHI789",
+        "created_at": "2023-09-11T02:43:38.682Z",
+        "updated_at": "2023-09-11T00:08:03.679Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "df4db1b1-9bcd-4f87-ba2d-b5c7a5598d17",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer D",
+        "model_number": "98765",
+        "serial_number": "JKL012",
+        "created_at": "2023-09-10T13:12:27.933Z",
+        "updated_at": "2023-09-10T19:32:38.145Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "f231e4be-185d-44ba-9639-ca194352d7c1",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer E",
+        "model_number": "01234",
+        "serial_number": "MNO345",
+        "created_at": "2023-09-10T19:01:51.200Z",
+        "updated_at": "2023-09-10T20:25:21.486Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "3d0453a2-3b4a-4f52-be58-7a8852820b25",
+        "quantity": 37615,
+        "purchase_date": "2023-09-10T14:13:24.286Z",
+        "expiry_date": "2023-09-10T06:50:46.434Z",
+        "created_at": "2023-09-11T00:29:20.496Z",
+        "updated_at": "2023-09-10T06:45:19.666Z",
+        "equipment_id": "94f55a94-b293-49be-a304-a636936ec8ed",
+        "supplier_id": "c69e69c6-b780-451a-a0c6-132a04a6f6c8"
+      },
+      {
+        "id": "6f5d3747-e796-4f6a-bd4c-86cdd542d267",
+        "quantity": 26674,
+        "purchase_date": "2023-09-10T22:31:36.017Z",
+        "expiry_date": "2023-09-10T21:56:50.936Z",
+        "created_at": "2023-09-10T17:14:56.810Z",
+        "updated_at": "2023-09-10T21:16:12.959Z",
+        "equipment_id": "bdf3dbf9-6cd1-4ebc-b008-a9ccac3865f1",
+        "supplier_id": "271e5ba6-8907-4cb9-8d25-4b0d0b8e3dd9"
+      },
+      {
+        "id": "3f16a669-7c8b-40ed-b6a9-826100abe1f1",
+        "quantity": 93460,
+        "purchase_date": "2023-09-10T09:05:29.312Z",
+        "expiry_date": "2023-09-11T03:46:06.787Z",
+        "created_at": "2023-09-10T22:17:36.710Z",
+        "updated_at": "2023-09-10T07:18:06.537Z",
+        "equipment_id": "8bc1c7a4-e96e-40e6-bf33-14d6f744ea5f",
+        "supplier_id": "c69e69c6-b780-451a-a0c6-132a04a6f6c8"
+      },
+      {
+        "id": "e6b25eb3-5d08-46e8-b910-b58478960c9c",
+        "quantity": 68499,
+        "purchase_date": "2023-09-10T15:53:08.299Z",
+        "expiry_date": "2023-09-10T10:22:31.777Z",
+        "created_at": "2023-09-10T13:23:02.028Z",
+        "updated_at": "2023-09-10T18:19:07.274Z",
+        "equipment_id": "94f55a94-b293-49be-a304-a636936ec8ed",
+        "supplier_id": "1e46afca-b3ff-4331-b2c4-ebd4095d83c8"
+      },
+      {
+        "id": "4de91fa3-9825-44c2-8042-ed8577d62140",
+        "quantity": 79833,
+        "purchase_date": "2023-09-11T01:24:49.664Z",
+        "expiry_date": "2023-09-11T00:10:43.413Z",
+        "created_at": "2023-09-10T23:00:51.641Z",
+        "updated_at": "2023-09-10T15:20:12.505Z",
+        "equipment_id": "bdf3dbf9-6cd1-4ebc-b008-a9ccac3865f1",
+        "supplier_id": "c69e69c6-b780-451a-a0c6-132a04a6f6c8"
+      }
+    ],
+    "customer": [
+      {
+        "id": "3f863c18-f0e9-470b-a12f-aed21b9d368a",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "customer1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T15:40:21.880Z",
+        "updated_at": "2023-09-11T01:34:46.952Z"
+      },
+      {
+        "id": "991475a4-c8e4-45ef-a1cb-0218ff8df959",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "0987654321",
+        "email_address": "customer2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T15:54:50.399Z",
+        "updated_at": "2023-09-11T01:47:35.342Z"
+      },
+      {
+        "id": "47d8d17d-5386-4f0f-919e-ca9a5f7799f0",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "customer3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T21:19:09.670Z",
+        "updated_at": "2023-09-10T15:52:38.671Z"
+      },
+      {
+        "id": "a4887cdc-f41c-45a6-b91c-50add77e9b7c",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "9999999999",
+        "email_address": "customer4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T10:15:45.873Z",
+        "updated_at": "2023-09-10T07:13:25.090Z"
+      },
+      {
+        "id": "1ccfcee6-b600-4e27-a18c-6e8c2e12edeb",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "contact_number": "1111111111",
+        "email_address": "customer5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T10:22:54.823Z",
+        "updated_at": "2023-09-10T13:19:47.096Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "72d1ba93-88b7-48b0-92a7-c353f92ba49d",
+        "email": "Joshua39@hotmail.com",
+        "firstName": "Josue",
+        "lastName": "Kerluke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9238044",
+        "tenantId": null
+      },
+      {
+        "reference": "e6759206-a993-4351-9584-03596870f59f",
+        "email": "Isom11@gmail.com",
+        "firstName": "Abby",
+        "lastName": "Rowe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/895.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e4fc0a8d-15ce-4a05-8aab-202d32feb921",
+        "email": "Turner_Brakus@gmail.com",
+        "firstName": "Lilyan",
+        "lastName": "Von",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/839.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d5792304-929c-4042-9224-1434fa1089a6",
+        "email": "Terrell.Champlin@yahoo.com",
+        "firstName": "Clyde",
+        "lastName": "Abbott",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/344.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "572539a0-9ff5-463e-86ff-53aa4755aca0",
+        "email": "Tia.Hand@hotmail.com",
+        "firstName": "Marlen",
+        "lastName": "Ankunding",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/23295971",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "e53fa4c0-ba03-4188-879f-a12452447b65",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "supplier1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T20:25:38.525Z",
+        "updated_at": "2023-09-10T17:03:33.371Z"
+      },
+      {
+        "id": "a48d926f-97ea-41db-bb96-ac944769c0dd",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "supplier2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T10:56:16.490Z",
+        "updated_at": "2023-09-11T05:09:07.986Z"
+      },
+      {
+        "id": "5d4d41dd-aa05-4e57-961c-7d6e6c938f22",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "4567891230",
+        "email_address": "supplier3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T04:38:18.109Z",
+        "updated_at": "2023-09-11T00:20:34.236Z"
+      },
+      {
+        "id": "70fd6129-5bcc-4b6e-b338-aff4f1036b70",
+        "name": "Best Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "0123456789",
+        "email_address": "supplier4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T14:05:15.039Z",
+        "updated_at": "2023-09-11T00:36:50.272Z"
+      },
+      {
+        "id": "21c6e69b-8c55-4c7e-b87f-764f5e6fb123",
+        "name": "Top Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "5432109876",
+        "email_address": "supplier5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-11T02:05:30.895Z",
+        "updated_at": "2023-09-10T18:13:49.633Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "938fd457-63a9-46f3-a29d-e51ba1b2a007",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer 1",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T12:02:32.682Z",
+        "updated_at": "2023-09-10T14:30:43.896Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "c00e2d6b-4526-451d-8545-4a86376d9001",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer 2",
+        "model_number": "67890",
+        "serial_number": "DEF456",
+        "created_at": "2023-09-10T23:52:57.153Z",
+        "updated_at": "2023-09-10T13:15:41.102Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "7f60b68c-6f26-4e74-97fd-53b8c41d8ca4",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer 3",
+        "model_number": "54321",
+        "serial_number": "GHI789",
+        "created_at": "2023-09-10T20:18:29.143Z",
+        "updated_at": "2023-09-11T04:47:12.652Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "85dae5c9-6bab-4903-a53f-728482c22cac",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer 4",
+        "model_number": "09876",
+        "serial_number": "JKL012",
+        "created_at": "2023-09-10T16:01:15.739Z",
+        "updated_at": "2023-09-11T02:43:33.643Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "20a5bba6-e1d2-48bb-a0a0-494a3548653f",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer 5",
+        "model_number": "13579",
+        "serial_number": "MNO345",
+        "created_at": "2023-09-11T01:49:46.180Z",
+        "updated_at": "2023-09-10T23:07:16.950Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "d41de53b-4f9c-43b6-a32b-9d3b61f2b3bf",
+        "quantity": 93453,
+        "purchase_date": "2023-09-10T08:40:46.688Z",
+        "expiry_date": "2023-09-10T21:49:19.929Z",
+        "created_at": "2023-09-11T03:43:10.544Z",
+        "updated_at": "2023-09-11T00:17:27.125Z",
+        "equipment_id": "7f60b68c-6f26-4e74-97fd-53b8c41d8ca4",
+        "supplier_id": "a48d926f-97ea-41db-bb96-ac944769c0dd"
+      },
+      {
+        "id": "2a8502d3-a16f-4500-971e-e36660bebc7b",
+        "quantity": 69170,
+        "purchase_date": "2023-09-10T23:50:00.660Z",
+        "expiry_date": "2023-09-10T21:49:47.370Z",
+        "created_at": "2023-09-10T17:21:48.881Z",
+        "updated_at": "2023-09-10T21:07:05.901Z",
+        "equipment_id": "7f60b68c-6f26-4e74-97fd-53b8c41d8ca4",
+        "supplier_id": "e53fa4c0-ba03-4188-879f-a12452447b65"
+      },
+      {
+        "id": "220aa26f-1379-4856-99a7-57255891e16a",
+        "quantity": 53685,
+        "purchase_date": "2023-09-10T07:34:17.193Z",
+        "expiry_date": "2023-09-10T20:19:26.667Z",
+        "created_at": "2023-09-11T05:39:28.602Z",
+        "updated_at": "2023-09-11T04:34:58.882Z",
+        "equipment_id": "c00e2d6b-4526-451d-8545-4a86376d9001",
+        "supplier_id": "a48d926f-97ea-41db-bb96-ac944769c0dd"
+      },
+      {
+        "id": "f36ad109-ea02-4c9b-a11a-a603b2082f03",
+        "quantity": 18834,
+        "purchase_date": "2023-09-10T15:39:25.698Z",
+        "expiry_date": "2023-09-10T10:15:27.563Z",
+        "created_at": "2023-09-10T19:46:24.140Z",
+        "updated_at": "2023-09-11T04:34:11.796Z",
+        "equipment_id": "20a5bba6-e1d2-48bb-a0a0-494a3548653f",
+        "supplier_id": "5d4d41dd-aa05-4e57-961c-7d6e6c938f22"
+      },
+      {
+        "id": "eb1a77ea-6c06-4be1-be0a-092cb77f9ecd",
+        "quantity": 79854,
+        "purchase_date": "2023-09-10T22:24:44.983Z",
+        "expiry_date": "2023-09-10T16:25:19.340Z",
+        "created_at": "2023-09-10T13:57:36.492Z",
+        "updated_at": "2023-09-10T06:10:05.665Z",
+        "equipment_id": "85dae5c9-6bab-4903-a53f-728482c22cac",
+        "supplier_id": "5d4d41dd-aa05-4e57-961c-7d6e6c938f22"
+      }
+    ],
+    "customer": [
+      {
+        "id": "e81cae34-8fc7-4b28-bc46-a923d82bff65",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "customer1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T17:56:03.168Z",
+        "updated_at": "2023-09-11T03:46:43.851Z"
+      },
+      {
+        "id": "cb2c2a98-8dd1-415b-bf63-a554862b932c",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "customer2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T21:23:53.791Z",
+        "updated_at": "2023-09-10T19:08:07.309Z"
+      },
+      {
+        "id": "a02fe7ab-e00e-4c98-8d6f-8640befce1c4",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "4567891230",
+        "email_address": "customer3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T10:20:47.473Z",
+        "updated_at": "2023-09-10T10:52:59.393Z"
+      },
+      {
+        "id": "2bd23b46-0ef6-49f7-9e54-da871d1cdb0a",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "0123456789",
+        "email_address": "customer4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-11T05:51:20.001Z",
+        "updated_at": "2023-09-10T18:12:36.599Z"
+      },
+      {
+        "id": "8b6e27e3-296c-471a-b6af-471782be7d78",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "5432109876",
+        "email_address": "customer5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T09:00:47.048Z",
+        "updated_at": "2023-09-10T20:06:51.825Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ec946c92-7045-4733-aeee-566dfc20a9a5",
+        "email": "Nichole_Bode@hotmail.com",
+        "firstName": "River",
+        "lastName": "Lueilwitz",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/517.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b88ccc3e-d5ea-4894-b6a0-01bfde3c83df",
+        "email": "Al.Kuhn19@hotmail.com",
+        "firstName": "Forrest",
+        "lastName": "Blanda",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/943.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e9d66e47-4381-49d5-accd-b4bcad4a948f",
+        "email": "Jarod.Zieme13@yahoo.com",
+        "firstName": "Vada",
+        "lastName": "Bode",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62822391",
+        "tenantId": null
+      },
+      {
+        "reference": "ce378d19-aab7-4fdf-983c-0f5e8871bc81",
+        "email": "Anissa.Thiel18@yahoo.com",
+        "firstName": "Kyle",
+        "lastName": "Streich",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/80024769",
+        "tenantId": null
+      },
+      {
+        "reference": "a6a62a3a-f0d3-418d-bbc9-5dc8eb377b97",
+        "email": "Ariane33@hotmail.com",
+        "firstName": "Holden",
+        "lastName": "Cassin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/154.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "71b2773e-90a8-40e5-a596-ca4a7b1262b1",
+        "name": "ABC Suppliers",
+        "contact_person": "John Smith",
+        "contact_number": "1234567890",
+        "email_address": "abc.suppliers@example.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-10T14:23:44.673Z",
+        "updated_at": "2023-09-11T02:57:06.488Z"
+      },
+      {
+        "id": "78f4d7a2-df9b-430e-876a-1021c7f48afc",
+        "name": "XYZ Company",
+        "contact_person": "Sarah Johnson",
+        "contact_number": "9876543210",
+        "email_address": "xyz.company@example.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T08:55:50.660Z",
+        "updated_at": "2023-09-11T00:27:11.878Z"
+      },
+      {
+        "id": "bc633058-6c3a-4383-b3e7-16ff45348a8d",
+        "name": "Global Traders",
+        "contact_person": "Michael Davis",
+        "contact_number": "4567890123",
+        "email_address": "global.traders@example.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-11T04:35:34.790Z",
+        "updated_at": "2023-09-10T20:41:16.110Z"
+      },
+      {
+        "id": "f545b9eb-374e-4af2-a134-d55a91e503a4",
+        "name": "Best Supplies",
+        "contact_person": "Emily Wilson",
+        "contact_number": "7890123456",
+        "email_address": "best.supplies@example.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-10T09:53:50.868Z",
+        "updated_at": "2023-09-10T11:30:35.272Z"
+      },
+      {
+        "id": "1addccbc-7935-4dc1-8469-b5303b65bf82",
+        "name": "Quality Products",
+        "contact_person": "David Thompson",
+        "contact_number": "2345678901",
+        "email_address": "quality.products@example.com",
+        "address": "654 Maple Court",
+        "created_at": "2023-09-10T10:05:51.908Z",
+        "updated_at": "2023-09-10T20:13:51.515Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "62ce49bd-4beb-4fad-b384-9a6d6570fe54",
+        "name": "MRI Machine",
+        "manufacturer": "ABC Medical",
+        "model_number": "12345",
+        "serial_number": "A1B2C3D4",
+        "created_at": "2023-09-10T13:05:33.717Z",
+        "updated_at": "2023-09-10T14:43:03.834Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "2f14c3ac-3cc4-4c63-9a2e-97b59361402f",
+        "name": "X-Ray Machine",
+        "manufacturer": "XYZ Technologies",
+        "model_number": "67890",
+        "serial_number": "E5F6G7H8",
+        "created_at": "2023-09-10T12:46:27.041Z",
+        "updated_at": "2023-09-11T00:14:27.806Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "1c70adba-c920-40c5-a565-f6c6435391aa",
+        "name": "Ultrasound Scanner",
+        "manufacturer": "Global Healthcare",
+        "model_number": "54321",
+        "serial_number": "I9J0K1L2",
+        "created_at": "2023-09-10T21:46:45.294Z",
+        "updated_at": "2023-09-11T00:42:36.767Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "c32c6c2f-7a5a-426f-877a-5a66def79484",
+        "name": "Defibrillator",
+        "manufacturer": "Best Equipment Co.",
+        "model_number": "09876",
+        "serial_number": "M3N4O5P6",
+        "created_at": "2023-09-10T17:17:03.919Z",
+        "updated_at": "2023-09-10T17:20:58.336Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "884c5275-9b6f-4f17-abf4-ee097b3685af",
+        "name": "Operating Table",
+        "manufacturer": "Quality Devices",
+        "model_number": "13579",
+        "serial_number": "Q7R8S9T0",
+        "created_at": "2023-09-10T08:50:09.434Z",
+        "updated_at": "2023-09-11T05:28:42.078Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "1729c238-1f9a-447f-99fc-655d53a08ed4",
+        "quantity": 23603,
+        "purchase_date": "2023-09-10T21:01:34.938Z",
+        "expiry_date": "2023-09-10T19:17:17.764Z",
+        "created_at": "2023-09-11T05:34:19.371Z",
+        "updated_at": "2023-09-10T08:32:32.318Z",
+        "equipment_id": "2f14c3ac-3cc4-4c63-9a2e-97b59361402f",
+        "supplier_id": "bc633058-6c3a-4383-b3e7-16ff45348a8d"
+      },
+      {
+        "id": "9d8d4e23-bd1a-4c60-a260-8973a180efc8",
+        "quantity": 37577,
+        "purchase_date": "2023-09-11T05:06:12.218Z",
+        "expiry_date": "2023-09-10T14:01:25.564Z",
+        "created_at": "2023-09-10T11:58:15.085Z",
+        "updated_at": "2023-09-11T05:12:41.255Z",
+        "equipment_id": "2f14c3ac-3cc4-4c63-9a2e-97b59361402f",
+        "supplier_id": "bc633058-6c3a-4383-b3e7-16ff45348a8d"
+      },
+      {
+        "id": "f18cb9ae-38ea-4caa-b93d-bffc2611dbfb",
+        "quantity": 60306,
+        "purchase_date": "2023-09-10T07:43:58.466Z",
+        "expiry_date": "2023-09-11T01:41:14.810Z",
+        "created_at": "2023-09-10T12:22:53.113Z",
+        "updated_at": "2023-09-10T06:56:47.761Z",
+        "equipment_id": "884c5275-9b6f-4f17-abf4-ee097b3685af",
+        "supplier_id": "bc633058-6c3a-4383-b3e7-16ff45348a8d"
+      },
+      {
+        "id": "067f1f04-4203-4c88-9ff0-1b94453d40a1",
+        "quantity": 61776,
+        "purchase_date": "2023-09-10T19:00:03.454Z",
+        "expiry_date": "2023-09-10T16:47:33.678Z",
+        "created_at": "2023-09-10T10:04:56.112Z",
+        "updated_at": "2023-09-11T05:49:02.917Z",
+        "equipment_id": "1c70adba-c920-40c5-a565-f6c6435391aa",
+        "supplier_id": "bc633058-6c3a-4383-b3e7-16ff45348a8d"
+      },
+      {
+        "id": "cabd250c-c72a-4b1a-975f-2bc8bf9ae2d3",
+        "quantity": 53434,
+        "purchase_date": "2023-09-10T09:15:06.810Z",
+        "expiry_date": "2023-09-10T08:30:28.429Z",
+        "created_at": "2023-09-10T16:34:31.734Z",
+        "updated_at": "2023-09-10T22:56:17.714Z",
+        "equipment_id": "2f14c3ac-3cc4-4c63-9a2e-97b59361402f",
+        "supplier_id": "bc633058-6c3a-4383-b3e7-16ff45348a8d"
+      }
+    ],
+    "customer": [
+      {
+        "id": "a760ef03-9ecf-4957-a284-738e386d7a15",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "john.doe@example.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-11T03:11:04.464Z",
+        "updated_at": "2023-09-10T16:28:06.137Z"
+      },
+      {
+        "id": "3b6a2f68-731b-4b93-aaf9-450b2fddbd25",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "jane.smith@example.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T07:31:38.595Z",
+        "updated_at": "2023-09-11T04:40:36.880Z"
+      },
+      {
+        "id": "de333fff-54df-4ec3-bc21-c0e27850e796",
+        "first_name": "Michael",
+        "last_name": "Johnson",
+        "contact_number": "4567890123",
+        "email_address": "michael.johnson@example.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-10T17:01:11.793Z",
+        "updated_at": "2023-09-11T03:23:51.047Z"
+      },
+      {
+        "id": "600cce09-f766-43c1-8e35-e81e471258b8",
+        "first_name": "Sarah",
+        "last_name": "Wilson",
+        "contact_number": "7890123456",
+        "email_address": "sarah.wilson@example.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-10T12:35:22.265Z",
+        "updated_at": "2023-09-10T20:47:41.049Z"
+      },
+      {
+        "id": "5036ca6a-9c45-4b0b-8281-e1e714c9f9ac",
+        "first_name": "David",
+        "last_name": "Brown",
+        "contact_number": "2345678901",
+        "email_address": "david.brown@example.com",
+        "address": "654 Maple Court",
+        "created_at": "2023-09-10T13:36:36.272Z",
+        "updated_at": "2023-09-10T11:46:53.030Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "db63c0fd-394c-4a85-919f-a3c813b6418f",
+        "email": "Mattie94@hotmail.com",
+        "firstName": "Gino",
+        "lastName": "Lehner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85312091",
+        "tenantId": null
+      },
+      {
+        "reference": "70b5d962-a486-4ee3-ab69-aa95ced58d46",
+        "email": "Dennis.Schamberger56@hotmail.com",
+        "firstName": "Colton",
+        "lastName": "Trantow",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/28102894",
+        "tenantId": null
+      },
+      {
+        "reference": "61c0e710-bd44-454c-9bfe-3ae50536064d",
+        "email": "Jermain_Lynch55@gmail.com",
+        "firstName": "Fay",
+        "lastName": "Senger",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97470494",
+        "tenantId": null
+      },
+      {
+        "reference": "e49ee383-a4dd-4c1e-a076-35c7bc9c32f3",
+        "email": "Brandi.Klein30@gmail.com",
+        "firstName": "Myrna",
+        "lastName": "Legros",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/375.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9d8b9d78-7d66-415b-948f-77b5463a6d56",
+        "email": "Liana.Wiza44@gmail.com",
+        "firstName": "Marcelino",
+        "lastName": "Doyle",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/84935776",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "405be492-d8a7-421c-93af-71b3d36452dc",
+        "name": "ABC Suppliers",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "info@abcsuppliers.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-10T09:01:39.380Z",
+        "updated_at": "2023-09-11T05:28:54.768Z"
+      },
+      {
+        "id": "3e1b1680-2132-44b7-93cc-0ad3d5df3cf1",
+        "name": "XYZ Company",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "sales@xyzcompany.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T14:51:19.910Z",
+        "updated_at": "2023-09-10T20:36:12.126Z"
+      },
+      {
+        "id": "1cd6996a-6dd8-471b-9cf7-3430897e2f6b",
+        "name": "123 Industries",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "contact@123industries.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-10T15:15:09.617Z",
+        "updated_at": "2023-09-10T21:52:32.762Z"
+      },
+      {
+        "id": "856469e2-e65c-4456-b4ca-5bd200470e06",
+        "name": "Global Suppliers",
+        "contact_person": "Sarah Jones",
+        "contact_number": "1111111111",
+        "email_address": "info@globalsuppliers.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-11T01:45:53.423Z",
+        "updated_at": "2023-09-10T08:00:46.411Z"
+      },
+      {
+        "id": "004e3690-f9eb-4c0d-b30d-16fb072ea9d1",
+        "name": "Best Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "9999999999",
+        "email_address": "support@bestsupplier.com",
+        "address": "654 Maple Drive",
+        "created_at": "2023-09-10T22:03:03.304Z",
+        "updated_at": "2023-09-10T11:49:52.366Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "543318cc-64aa-4a2e-84c7-54d9cffa522c",
+        "name": "X-Ray Machine",
+        "manufacturer": "ABC Medical",
+        "model_number": "1234",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T22:57:09.866Z",
+        "updated_at": "2023-09-10T17:40:00.408Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "9c056010-441a-4906-9f0b-9a8d0a8fd6b3",
+        "name": "MRI Scanner",
+        "manufacturer": "XYZ Technologies",
+        "model_number": "5678",
+        "serial_number": "XYZ456",
+        "created_at": "2023-09-10T14:48:31.439Z",
+        "updated_at": "2023-09-10T12:14:55.997Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "9adea5dd-1a4e-41a0-aeee-16c052aceaa5",
+        "name": "Ultrasound System",
+        "manufacturer": "123 Healthcare",
+        "model_number": "9012",
+        "serial_number": "123ABC",
+        "created_at": "2023-09-10T11:37:59.421Z",
+        "updated_at": "2023-09-11T02:49:52.270Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "112386e2-01ca-4753-a829-6380d1ed3f9c",
+        "name": "CT Scanner",
+        "manufacturer": "Global Imaging",
+        "model_number": "3456",
+        "serial_number": "456XYZ",
+        "created_at": "2023-09-10T09:12:57.379Z",
+        "updated_at": "2023-09-10T21:45:16.778Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "ddab3737-8aba-4af7-8755-c734c5e428ea",
+        "name": "Operating Table",
+        "manufacturer": "Best Equipment",
+        "model_number": "7890",
+        "serial_number": "789ABC",
+        "created_at": "2023-09-10T16:33:51.209Z",
+        "updated_at": "2023-09-11T04:54:16.632Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "470c49f1-0b54-4001-9265-95a8ca97e5f8",
+        "quantity": 29282,
+        "purchase_date": "2023-09-10T15:02:16.612Z",
+        "expiry_date": "2023-09-10T11:48:52.684Z",
+        "created_at": "2023-09-10T19:34:19.067Z",
+        "updated_at": "2023-09-10T21:40:01.414Z",
+        "equipment_id": "ddab3737-8aba-4af7-8755-c734c5e428ea",
+        "supplier_id": "004e3690-f9eb-4c0d-b30d-16fb072ea9d1"
+      },
+      {
+        "id": "c0127a89-34d6-47eb-9119-f8a1aab8c7d1",
+        "quantity": 53387,
+        "purchase_date": "2023-09-10T13:15:55.524Z",
+        "expiry_date": "2023-09-10T14:43:06.699Z",
+        "created_at": "2023-09-10T17:15:57.422Z",
+        "updated_at": "2023-09-10T22:02:48.737Z",
+        "equipment_id": "9c056010-441a-4906-9f0b-9a8d0a8fd6b3",
+        "supplier_id": "405be492-d8a7-421c-93af-71b3d36452dc"
+      },
+      {
+        "id": "bdf59e5b-72c0-4811-8ad3-cde0a16d2461",
+        "quantity": 24171,
+        "purchase_date": "2023-09-11T02:32:36.327Z",
+        "expiry_date": "2023-09-10T08:17:25.729Z",
+        "created_at": "2023-09-10T17:57:56.338Z",
+        "updated_at": "2023-09-10T11:25:06.284Z",
+        "equipment_id": "9adea5dd-1a4e-41a0-aeee-16c052aceaa5",
+        "supplier_id": "405be492-d8a7-421c-93af-71b3d36452dc"
+      },
+      {
+        "id": "62ab231c-3332-4a83-9efc-86ee41691abf",
+        "quantity": 27512,
+        "purchase_date": "2023-09-10T13:25:38.786Z",
+        "expiry_date": "2023-09-11T03:54:23.378Z",
+        "created_at": "2023-09-11T04:38:57.945Z",
+        "updated_at": "2023-09-10T06:06:13.532Z",
+        "equipment_id": "543318cc-64aa-4a2e-84c7-54d9cffa522c",
+        "supplier_id": "856469e2-e65c-4456-b4ca-5bd200470e06"
+      },
+      {
+        "id": "332ee862-446b-4a8c-b0a1-48aca5a62cee",
+        "quantity": 98548,
+        "purchase_date": "2023-09-10T08:30:50.839Z",
+        "expiry_date": "2023-09-10T15:19:39.772Z",
+        "created_at": "2023-09-11T05:24:56.621Z",
+        "updated_at": "2023-09-11T00:14:05.796Z",
+        "equipment_id": "ddab3737-8aba-4af7-8755-c734c5e428ea",
+        "supplier_id": "3e1b1680-2132-44b7-93cc-0ad3d5df3cf1"
+      }
+    ],
+    "customer": [
+      {
+        "id": "97525c61-c0ba-472e-ace3-691fbace9654",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "john.doe@example.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-10T18:43:17.171Z",
+        "updated_at": "2023-09-10T14:59:01.637Z"
+      },
+      {
+        "id": "231cf4fa-3093-4cec-bc8c-88679339de4f",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "jane.smith@example.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T08:37:05.676Z",
+        "updated_at": "2023-09-11T02:28:13.303Z"
+      },
+      {
+        "id": "be3aca3a-01fe-4108-95a4-472ad8f841d4",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "michael.brown@example.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-10T20:13:53.921Z",
+        "updated_at": "2023-09-10T06:01:05.396Z"
+      },
+      {
+        "id": "bf8919a0-6546-478e-9786-e461472743ef",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "1111111111",
+        "email_address": "sarah.jones@example.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-11T02:58:55.290Z",
+        "updated_at": "2023-09-10T07:19:44.459Z"
+      },
+      {
+        "id": "2b28a53c-4096-4b05-b827-d00f7a9a77fb",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "9999999999",
+        "email_address": "david.wilson@example.com",
+        "address": "654 Maple Drive",
+        "created_at": "2023-09-10T14:49:10.593Z",
+        "updated_at": "2023-09-10T19:33:00.035Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "87266572-ad7d-4761-a9d6-a0feda1a94ca",
+        "email": "Aidan_Witting5@hotmail.com",
+        "firstName": "Lilly",
+        "lastName": "Ritchie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/75819985",
+        "tenantId": null
+      },
+      {
+        "reference": "d3ad753a-f3f0-482c-be38-9b96c77cdddf",
+        "email": "Luis8@gmail.com",
+        "firstName": "Janie",
+        "lastName": "Breitenberg",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/217.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a4049c93-eb55-412a-86a8-c689dac1da38",
+        "email": "Chadrick.Larson@gmail.com",
+        "firstName": "Yadira",
+        "lastName": "Ruecker",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1022275",
+        "tenantId": null
+      },
+      {
+        "reference": "84b6f4c4-3c4c-478c-919f-5a52f5fed8a9",
+        "email": "Jarrod_White38@gmail.com",
+        "firstName": "Maude",
+        "lastName": "Howe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1198.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "33830453-125d-41c6-90e0-a37d7a4dd36c",
+        "email": "Pink_Grady@hotmail.com",
+        "firstName": "Stacey",
+        "lastName": "Romaguera",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/28438715",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "6af1a2ce-0d2f-4f69-8488-2cba61dd7bfd",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "supplier1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T20:23:04.792Z",
+        "updated_at": "2023-09-10T12:52:44.663Z"
+      },
+      {
+        "id": "03648827-adf8-4373-99bc-d49d34a5bbea",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "supplier2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T09:33:00.704Z",
+        "updated_at": "2023-09-10T21:18:48.550Z"
+      },
+      {
+        "id": "a72ae09d-80ca-48ab-89db-e80e873d9b64",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "supplier3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T22:06:30.812Z",
+        "updated_at": "2023-09-11T02:32:19.469Z"
+      },
+      {
+        "id": "0cfa9e94-095f-4c44-916c-967eb7003147",
+        "name": "Best Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "1111111111",
+        "email_address": "supplier4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T18:13:27.112Z",
+        "updated_at": "2023-09-10T16:35:34.240Z"
+      },
+      {
+        "id": "d1d16b32-bf5a-46b9-8ac5-ddcabf36d518",
+        "name": "Top Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "9999999999",
+        "email_address": "supplier5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T14:25:22.416Z",
+        "updated_at": "2023-09-10T21:46:24.113Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "549c9846-78ab-49e5-aabd-1ea98bb1b94e",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer 1",
+        "model_number": "12345",
+        "serial_number": "ABCDE12345",
+        "created_at": "2023-09-10T21:19:00.153Z",
+        "updated_at": "2023-09-10T09:29:56.534Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "f6e6cd05-9467-4551-9a5e-b646f678bf1c",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer 2",
+        "model_number": "67890",
+        "serial_number": "FGHIJ67890",
+        "created_at": "2023-09-10T11:02:40.877Z",
+        "updated_at": "2023-09-10T22:49:33.826Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "87b883b0-6246-4dc8-bec2-acd622127d0d",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer 3",
+        "model_number": "54321",
+        "serial_number": "KLMNO54321",
+        "created_at": "2023-09-10T18:22:43.883Z",
+        "updated_at": "2023-09-11T02:06:37.652Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "0e4b0703-ef26-4f7c-8f6b-0d991de8d851",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer 4",
+        "model_number": "09876",
+        "serial_number": "PQRST09876",
+        "created_at": "2023-09-10T07:03:36.769Z",
+        "updated_at": "2023-09-10T06:51:17.500Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "247c8c15-f3fa-4d27-8412-128b44d61ee3",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer 5",
+        "model_number": "13579",
+        "serial_number": "UVWXY13579",
+        "created_at": "2023-09-10T23:23:21.342Z",
+        "updated_at": "2023-09-11T04:37:09.346Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "d74e2504-6225-47ff-b375-5fd69bc8ef48",
+        "quantity": 37178,
+        "purchase_date": "2023-09-10T09:46:31.859Z",
+        "expiry_date": "2023-09-10T15:25:23.692Z",
+        "created_at": "2023-09-10T10:23:45.163Z",
+        "updated_at": "2023-09-10T18:13:27.071Z",
+        "equipment_id": "247c8c15-f3fa-4d27-8412-128b44d61ee3",
+        "supplier_id": "d1d16b32-bf5a-46b9-8ac5-ddcabf36d518"
+      },
+      {
+        "id": "249db60e-9dac-42f5-b036-9e50f2b1bd30",
+        "quantity": 49222,
+        "purchase_date": "2023-09-10T10:39:33.325Z",
+        "expiry_date": "2023-09-10T07:25:57.570Z",
+        "created_at": "2023-09-10T10:29:45.589Z",
+        "updated_at": "2023-09-10T23:43:37.564Z",
+        "equipment_id": "f6e6cd05-9467-4551-9a5e-b646f678bf1c",
+        "supplier_id": "0cfa9e94-095f-4c44-916c-967eb7003147"
+      },
+      {
+        "id": "dfc172a3-92ae-4f8b-932a-c06bb94a72c7",
+        "quantity": 39487,
+        "purchase_date": "2023-09-10T09:01:51.934Z",
+        "expiry_date": "2023-09-10T13:42:12.122Z",
+        "created_at": "2023-09-10T08:59:47.460Z",
+        "updated_at": "2023-09-11T01:36:42.927Z",
+        "equipment_id": "0e4b0703-ef26-4f7c-8f6b-0d991de8d851",
+        "supplier_id": "03648827-adf8-4373-99bc-d49d34a5bbea"
+      },
+      {
+        "id": "5ed8efb8-1910-45e7-9b61-1ada045c5d55",
+        "quantity": 92344,
+        "purchase_date": "2023-09-10T20:07:11.474Z",
+        "expiry_date": "2023-09-10T11:46:44.011Z",
+        "created_at": "2023-09-10T22:21:55.993Z",
+        "updated_at": "2023-09-10T07:00:28.892Z",
+        "equipment_id": "247c8c15-f3fa-4d27-8412-128b44d61ee3",
+        "supplier_id": "6af1a2ce-0d2f-4f69-8488-2cba61dd7bfd"
+      },
+      {
+        "id": "0e5d7e87-8366-4eb9-bbd3-c09515c49be3",
+        "quantity": 9944,
+        "purchase_date": "2023-09-10T16:43:48.875Z",
+        "expiry_date": "2023-09-10T13:33:54.521Z",
+        "created_at": "2023-09-10T06:36:54.625Z",
+        "updated_at": "2023-09-11T00:42:33.201Z",
+        "equipment_id": "247c8c15-f3fa-4d27-8412-128b44d61ee3",
+        "supplier_id": "d1d16b32-bf5a-46b9-8ac5-ddcabf36d518"
+      }
+    ],
+    "customer": [
+      {
+        "id": "ac95d32f-f973-4254-b4c3-b94ae1d8f303",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "customer1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T13:12:25.653Z",
+        "updated_at": "2023-09-10T15:05:52.447Z"
+      },
+      {
+        "id": "b982fc8b-e255-4e89-a3de-ceb18f5c0bac",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "customer2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T22:31:53.261Z",
+        "updated_at": "2023-09-11T04:22:27.433Z"
+      },
+      {
+        "id": "f7a82616-0946-4790-9ae8-7841d1eb903b",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "customer3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T02:21:57.846Z",
+        "updated_at": "2023-09-10T13:14:37.286Z"
+      },
+      {
+        "id": "91a001d4-5c06-47b5-b3f4-efd361e524f8",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "1111111111",
+        "email_address": "customer4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T09:40:15.552Z",
+        "updated_at": "2023-09-11T00:53:31.930Z"
+      },
+      {
+        "id": "dbdf8b30-8105-4664-b746-4686a97f64e8",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "9999999999",
+        "email_address": "customer5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T22:43:35.780Z",
+        "updated_at": "2023-09-10T16:54:22.493Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "dcf57dd0-2a29-4057-a567-36a9d69d70e5",
+        "email": "Dena.OConner@hotmail.com",
+        "firstName": "Enrique",
+        "lastName": "Kassulke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/40277717",
+        "tenantId": null
+      },
+      {
+        "reference": "d657c196-6afa-44db-a14b-d9646cd83111",
+        "email": "Clark88@hotmail.com",
+        "firstName": "Xavier",
+        "lastName": "Klein",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/300.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b2af77da-e654-4c79-8b90-abe22e5abfeb",
+        "email": "William.Crooks38@yahoo.com",
+        "firstName": "Jordon",
+        "lastName": "Wolff",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/371.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6d99511e-dac1-4eee-b9f7-2b812ef52554",
+        "email": "Marianne.Tromp20@gmail.com",
+        "firstName": "Theodore",
+        "lastName": "Spinka",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/706.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "49665f38-872f-4008-9a08-9d33e67d701f",
+        "email": "Oleta_Stark@gmail.com",
+        "firstName": "Connor",
+        "lastName": "Kautzer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/43052857",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "c4191f56-ba86-4709-b531-6fb3439808dd",
+        "name": "ABC Suppliers",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "abc.suppliers@example.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-10T12:49:27.078Z",
+        "updated_at": "2023-09-10T23:58:18.915Z"
+      },
+      {
+        "id": "f1f81de9-ab3a-419b-931a-d8de033e18b4",
+        "name": "XYZ Company",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "xyz.company@example.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T16:35:47.417Z",
+        "updated_at": "2023-09-10T12:10:04.372Z"
+      },
+      {
+        "id": "14877d6e-bb70-44ed-9aa2-c006d4333a82",
+        "name": "123 Enterprises",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "123.enterprises@example.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-10T07:50:31.350Z",
+        "updated_at": "2023-09-10T13:40:30.124Z"
+      },
+      {
+        "id": "ccf3df09-39c6-42ba-a1f8-a1d18995a231",
+        "name": "Global Suppliers",
+        "contact_person": "Sarah Jones",
+        "contact_number": "1111111111",
+        "email_address": "global.suppliers@example.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-10T19:08:04.555Z",
+        "updated_at": "2023-09-11T02:11:52.020Z"
+      },
+      {
+        "id": "726e5893-c599-4e13-859c-78454d078087",
+        "name": "Best Suppliers",
+        "contact_person": "Robert Wilson",
+        "contact_number": "9999999999",
+        "email_address": "best.suppliers@example.com",
+        "address": "987 Maple Drive",
+        "created_at": "2023-09-10T20:56:05.032Z",
+        "updated_at": "2023-09-11T02:21:08.647Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "668a8636-caa6-4907-a0eb-ff68909d1df3",
+        "name": "X-Ray Machine",
+        "manufacturer": "ABC Medical",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T17:24:40.666Z",
+        "updated_at": "2023-09-10T21:24:23.403Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "ae58818b-9f84-4916-a699-0e3bc8ffee86",
+        "name": "MRI Scanner",
+        "manufacturer": "XYZ Healthcare",
+        "model_number": "67890",
+        "serial_number": "XYZ456",
+        "created_at": "2023-09-11T02:54:14.173Z",
+        "updated_at": "2023-09-10T13:17:53.020Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "94e91351-0b3d-48dc-88c1-8d03c2e95ebb",
+        "name": "Ultrasound System",
+        "manufacturer": "123 Equipment",
+        "model_number": "54321",
+        "serial_number": "123ABC",
+        "created_at": "2023-09-10T18:20:37.331Z",
+        "updated_at": "2023-09-10T17:29:52.835Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "d6a8c76d-058a-4e28-9897-3fbb5a390e3e",
+        "name": "CT Scanner",
+        "manufacturer": "Global Technologies",
+        "model_number": "09876",
+        "serial_number": "456XYZ",
+        "created_at": "2023-09-10T23:19:51.647Z",
+        "updated_at": "2023-09-10T07:20:19.212Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "1e7e1c5e-71c7-477d-810f-898eca738cb2",
+        "name": "Operating Table",
+        "manufacturer": "Best Medical",
+        "model_number": "13579",
+        "serial_number": "789ABC",
+        "created_at": "2023-09-10T12:57:15.767Z",
+        "updated_at": "2023-09-11T04:32:28.288Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "8bd26c10-fba9-4e5e-83f7-19179ee9d830",
+        "quantity": 80749,
+        "purchase_date": "2023-09-10T15:36:53.331Z",
+        "expiry_date": "2023-09-10T18:48:04.834Z",
+        "created_at": "2023-09-10T18:20:54.774Z",
+        "updated_at": "2023-09-10T16:47:27.117Z",
+        "equipment_id": "1e7e1c5e-71c7-477d-810f-898eca738cb2",
+        "supplier_id": "ccf3df09-39c6-42ba-a1f8-a1d18995a231"
+      },
+      {
+        "id": "77524635-cb53-47cf-bb6d-9645ca0ccea8",
+        "quantity": 36312,
+        "purchase_date": "2023-09-10T07:40:22.524Z",
+        "expiry_date": "2023-09-10T19:23:25.678Z",
+        "created_at": "2023-09-10T17:38:27.515Z",
+        "updated_at": "2023-09-10T11:42:16.677Z",
+        "equipment_id": "1e7e1c5e-71c7-477d-810f-898eca738cb2",
+        "supplier_id": "726e5893-c599-4e13-859c-78454d078087"
+      },
+      {
+        "id": "bc079854-49a6-44c5-9944-c3a4c1965a1b",
+        "quantity": 51587,
+        "purchase_date": "2023-09-11T05:20:12.009Z",
+        "expiry_date": "2023-09-10T21:48:13.130Z",
+        "created_at": "2023-09-10T20:15:50.628Z",
+        "updated_at": "2023-09-10T08:52:24.721Z",
+        "equipment_id": "1e7e1c5e-71c7-477d-810f-898eca738cb2",
+        "supplier_id": "c4191f56-ba86-4709-b531-6fb3439808dd"
+      },
+      {
+        "id": "83356fad-3d72-4238-a3a5-932045175b9e",
+        "quantity": 7131,
+        "purchase_date": "2023-09-10T13:21:53.499Z",
+        "expiry_date": "2023-09-10T19:53:29.709Z",
+        "created_at": "2023-09-11T01:39:07.495Z",
+        "updated_at": "2023-09-10T12:07:27.331Z",
+        "equipment_id": "ae58818b-9f84-4916-a699-0e3bc8ffee86",
+        "supplier_id": "ccf3df09-39c6-42ba-a1f8-a1d18995a231"
+      },
+      {
+        "id": "0e0da352-f02b-464e-b16c-4ab64606e057",
+        "quantity": 57282,
+        "purchase_date": "2023-09-10T18:04:43.812Z",
+        "expiry_date": "2023-09-11T04:48:01.003Z",
+        "created_at": "2023-09-10T18:14:54.599Z",
+        "updated_at": "2023-09-10T18:01:04.411Z",
+        "equipment_id": "668a8636-caa6-4907-a0eb-ff68909d1df3",
+        "supplier_id": "726e5893-c599-4e13-859c-78454d078087"
+      }
+    ],
+    "customer": [
+      {
+        "id": "22b7c207-9909-4d7a-9e3e-64e0b30c8460",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "john.doe@example.com",
+        "address": "123 Main Street",
+        "created_at": "2023-09-10T09:45:30.941Z",
+        "updated_at": "2023-09-10T11:04:26.756Z"
+      },
+      {
+        "id": "88a09f62-2a69-482a-a4ae-0a09d4f163a7",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "jane.smith@example.com",
+        "address": "456 Elm Avenue",
+        "created_at": "2023-09-10T18:52:36.066Z",
+        "updated_at": "2023-09-10T09:12:49.517Z"
+      },
+      {
+        "id": "07ce787e-54c2-47ba-bf25-db9b90f2825f",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "michael.brown@example.com",
+        "address": "789 Oak Lane",
+        "created_at": "2023-09-10T11:50:57.688Z",
+        "updated_at": "2023-09-10T10:09:51.732Z"
+      },
+      {
+        "id": "af9fed9c-8a32-409e-bcdf-0bb072456322",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "1111111111",
+        "email_address": "sarah.jones@example.com",
+        "address": "321 Pine Road",
+        "created_at": "2023-09-11T00:00:18.181Z",
+        "updated_at": "2023-09-10T21:27:58.817Z"
+      },
+      {
+        "id": "d23bc675-9cb4-4856-87c8-ef0629a1361f",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "contact_number": "9999999999",
+        "email_address": "robert.wilson@example.com",
+        "address": "987 Maple Drive",
+        "created_at": "2023-09-10T06:25:51.946Z",
+        "updated_at": "2023-09-10T11:40:58.841Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0370bc99-54aa-4fdd-9010-46900abc063b",
+        "email": "Glenna.Zulauf43@hotmail.com",
+        "firstName": "Ena",
+        "lastName": "Schmeler",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37547478",
+        "tenantId": null
+      },
+      {
+        "reference": "e131e04d-bf32-4b0b-9aa2-5240070ea2a8",
+        "email": "Okey_Gleason@hotmail.com",
+        "firstName": "Leon",
+        "lastName": "Johns",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/32.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "38b6a642-5180-4abb-9fb9-cf4847656c34",
+        "email": "Pablo_Hoppe@hotmail.com",
+        "firstName": "Stephan",
+        "lastName": "Miller",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1043.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b1bd242f-aa9d-4eb2-a94b-be00406235c1",
+        "email": "Sarah.Turcotte@gmail.com",
+        "firstName": "Ilene",
+        "lastName": "Trantow",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/3795124",
+        "tenantId": null
+      },
+      {
+        "reference": "407f477a-d689-4e69-bf67-10a64abbb064",
+        "email": "Macy.Durgan59@hotmail.com",
+        "firstName": "Noemy",
+        "lastName": "Nitzsche",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/467.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "1d66b5f1-b3b7-4f64-af16-22d07383f70c",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "supplier1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T17:27:34.385Z",
+        "updated_at": "2023-09-11T04:02:06.980Z"
+      },
+      {
+        "id": "a6e933f4-784f-4de6-84e2-3b7b4f847948",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "0987654321",
+        "email_address": "supplier2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T23:24:32.180Z",
+        "updated_at": "2023-09-11T03:39:51.463Z"
+      },
+      {
+        "id": "9a761313-52e0-40b7-9de2-7b18494b232f",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "1112223333",
+        "email_address": "supplier3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T05:07:56.990Z",
+        "updated_at": "2023-09-10T21:49:43.526Z"
+      },
+      {
+        "id": "0ab99cbb-11b0-42f7-ba72-e9330871858a",
+        "name": "456 Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "4445556666",
+        "email_address": "supplier4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T11:57:21.803Z",
+        "updated_at": "2023-09-11T04:46:27.826Z"
+      },
+      {
+        "id": "4a665fc2-987b-456b-ac92-5e3694bff8c2",
+        "name": "789 Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "7778889999",
+        "email_address": "supplier5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T13:27:25.522Z",
+        "updated_at": "2023-09-11T05:06:49.292Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dcfd1ebe-8ced-48ee-9279-39d30d605a6c",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer A",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T13:41:43.900Z",
+        "updated_at": "2023-09-11T01:04:57.627Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "1848d48f-474e-42e3-986f-bbc654b9a4fd",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer B",
+        "model_number": "67890",
+        "serial_number": "DEF456",
+        "created_at": "2023-09-10T08:40:22.688Z",
+        "updated_at": "2023-09-10T21:03:38.837Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "470418fd-3425-44e1-806c-561ef926cdb4",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer C",
+        "model_number": "54321",
+        "serial_number": "GHI789",
+        "created_at": "2023-09-10T11:13:33.161Z",
+        "updated_at": "2023-09-10T13:16:09.957Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "2e65b0a0-829e-4bba-8276-5db78cf06c98",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer D",
+        "model_number": "09876",
+        "serial_number": "JKL012",
+        "created_at": "2023-09-11T04:05:22.300Z",
+        "updated_at": "2023-09-10T06:30:10.526Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "a776543f-df2a-472b-8600-ce62d71c844f",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer E",
+        "model_number": "13579",
+        "serial_number": "MNO345",
+        "created_at": "2023-09-10T19:23:49.383Z",
+        "updated_at": "2023-09-10T09:36:48.479Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "e692480e-807e-49f9-96b6-e061e9c44e27",
+        "quantity": 5310,
+        "purchase_date": "2023-09-11T01:32:52.749Z",
+        "expiry_date": "2023-09-10T16:54:39.373Z",
+        "created_at": "2023-09-10T09:30:52.862Z",
+        "updated_at": "2023-09-11T03:13:12.501Z",
+        "equipment_id": "1848d48f-474e-42e3-986f-bbc654b9a4fd",
+        "supplier_id": "1d66b5f1-b3b7-4f64-af16-22d07383f70c"
+      },
+      {
+        "id": "b2730935-3cf5-4af2-9049-cf48bea8b082",
+        "quantity": 55535,
+        "purchase_date": "2023-09-10T19:29:33.495Z",
+        "expiry_date": "2023-09-11T01:24:05.646Z",
+        "created_at": "2023-09-11T05:05:29.528Z",
+        "updated_at": "2023-09-11T03:44:28.096Z",
+        "equipment_id": "2e65b0a0-829e-4bba-8276-5db78cf06c98",
+        "supplier_id": "1d66b5f1-b3b7-4f64-af16-22d07383f70c"
+      },
+      {
+        "id": "ee995ad2-21d6-41c4-88b3-0cdc1425c748",
+        "quantity": 58623,
+        "purchase_date": "2023-09-10T16:03:28.206Z",
+        "expiry_date": "2023-09-10T09:50:46.853Z",
+        "created_at": "2023-09-11T03:29:51.317Z",
+        "updated_at": "2023-09-10T11:42:37.709Z",
+        "equipment_id": "2e65b0a0-829e-4bba-8276-5db78cf06c98",
+        "supplier_id": "4a665fc2-987b-456b-ac92-5e3694bff8c2"
+      },
+      {
+        "id": "065d725b-8e21-4269-a2d4-7349ee40cb7a",
+        "quantity": 82496,
+        "purchase_date": "2023-09-11T04:06:27.111Z",
+        "expiry_date": "2023-09-10T19:14:52.301Z",
+        "created_at": "2023-09-10T09:57:49.329Z",
+        "updated_at": "2023-09-10T17:51:38.462Z",
+        "equipment_id": "1848d48f-474e-42e3-986f-bbc654b9a4fd",
+        "supplier_id": "1d66b5f1-b3b7-4f64-af16-22d07383f70c"
+      },
+      {
+        "id": "7349f583-3e28-4f10-b05f-765b443cfabb",
+        "quantity": 13603,
+        "purchase_date": "2023-09-10T16:59:45.262Z",
+        "expiry_date": "2023-09-11T04:41:22.954Z",
+        "created_at": "2023-09-10T08:43:05.759Z",
+        "updated_at": "2023-09-11T05:36:06.786Z",
+        "equipment_id": "1848d48f-474e-42e3-986f-bbc654b9a4fd",
+        "supplier_id": "1d66b5f1-b3b7-4f64-af16-22d07383f70c"
+      }
+    ],
+    "customer": [
+      {
+        "id": "0f74cdab-30a3-4e22-93e5-1bc9fd0c9b33",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "customer1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T19:17:43.476Z",
+        "updated_at": "2023-09-10T15:01:45.455Z"
+      },
+      {
+        "id": "f949861a-7986-424d-9188-9c8b62f917cf",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "0987654321",
+        "email_address": "customer2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T21:02:24.580Z",
+        "updated_at": "2023-09-10T20:59:05.914Z"
+      },
+      {
+        "id": "ede8342e-b877-4eab-aaa5-cf9120af9591",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "1112223333",
+        "email_address": "customer3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T15:19:21.433Z",
+        "updated_at": "2023-09-10T11:48:18.506Z"
+      },
+      {
+        "id": "fd32b160-6b37-464c-8730-15d2a65f11ef",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "4445556666",
+        "email_address": "customer4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T15:46:27.072Z",
+        "updated_at": "2023-09-10T13:11:50.634Z"
+      },
+      {
+        "id": "d7b361cb-1cec-453b-9166-315dbf4e796a",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "7778889999",
+        "email_address": "customer5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-11T05:04:01.439Z",
+        "updated_at": "2023-09-10T17:09:32.151Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4052afc2-4359-41c9-b72f-3214a2ad698c",
+        "email": "Elisa.Lubowitz@hotmail.com",
+        "firstName": "Valerie",
+        "lastName": "Turcotte",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49297002",
+        "tenantId": null
+      },
+      {
+        "reference": "93c8ca94-127d-4e69-97d2-671b444c530f",
+        "email": "Isabella.Harvey13@gmail.com",
+        "firstName": "Earl",
+        "lastName": "Crooks",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/268.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b2ec75dd-5cfe-41f9-9234-18305343a7df",
+        "email": "Nestor23@gmail.com",
+        "firstName": "Casper",
+        "lastName": "Schultz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/89407066",
+        "tenantId": null
+      },
+      {
+        "reference": "5a56baca-50f5-4758-aed9-46dd88161fc6",
+        "email": "Benedict.Gutmann@gmail.com",
+        "firstName": "Teresa",
+        "lastName": "Boyer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/92748838",
+        "tenantId": null
+      },
+      {
+        "reference": "04723b57-8c98-4cc1-9665-fb1cbb0e940f",
+        "email": "Berniece.Glover13@gmail.com",
+        "firstName": "Leo",
+        "lastName": "Kessler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/318.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "fd979803-5e7f-47d8-bb1b-c2a39295047d",
+        "name": "ABC Suppliers",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "info@abcsuppliers.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T17:30:12.327Z",
+        "updated_at": "2023-09-10T15:04:46.554Z"
+      },
+      {
+        "id": "3a60382e-1735-4c34-b74b-65c89e495409",
+        "name": "XYZ Corporation",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "contact@xyzcorp.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-11T02:49:05.368Z",
+        "updated_at": "2023-09-10T14:15:46.688Z"
+      },
+      {
+        "id": "32aa653a-efa5-451b-a57b-dda7039c9d14",
+        "name": "123 Manufacturing",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "sales@123manufacturing.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T01:27:47.125Z",
+        "updated_at": "2023-09-10T15:21:34.624Z"
+      },
+      {
+        "id": "f2985489-773f-4600-a2ea-133ea9654c83",
+        "name": "Global Suppliers",
+        "contact_person": "Sarah Jones",
+        "contact_number": "9999999999",
+        "email_address": "support@globalsuppliers.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-11T01:57:06.160Z",
+        "updated_at": "2023-09-10T12:04:49.582Z"
+      },
+      {
+        "id": "20c81049-07af-448b-bd15-72a288c4f1f8",
+        "name": "Best Deals",
+        "contact_person": "Robert Wilson",
+        "contact_number": "1111111111",
+        "email_address": "info@bestdeals.com",
+        "address": "987 Maple St",
+        "created_at": "2023-09-10T11:50:36.413Z",
+        "updated_at": "2023-09-10T19:53:39.004Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "09020684-e05f-4c39-8a6f-29b59f5a723e",
+        "name": "X-Ray Machine",
+        "manufacturer": "ABC Medical",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T23:20:13.840Z",
+        "updated_at": "2023-09-10T09:33:23.763Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "8183101b-c14d-43cd-819b-32488dce7fce",
+        "name": "MRI Scanner",
+        "manufacturer": "XYZ Technologies",
+        "model_number": "67890",
+        "serial_number": "XYZ456",
+        "created_at": "2023-09-10T18:48:35.593Z",
+        "updated_at": "2023-09-10T12:24:54.984Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "20e1d0c2-b6b8-4254-bd80-682a6d79d4a5",
+        "name": "Ultrasound System",
+        "manufacturer": "123 Healthcare",
+        "model_number": "54321",
+        "serial_number": "123ABC",
+        "created_at": "2023-09-10T10:46:02.196Z",
+        "updated_at": "2023-09-10T14:57:09.531Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "e9efbfdd-0f10-4891-82a5-b0cab44ca5ab",
+        "name": "CT Scanner",
+        "manufacturer": "Global Medical",
+        "model_number": "09876",
+        "serial_number": "456XYZ",
+        "created_at": "2023-09-11T01:28:42.874Z",
+        "updated_at": "2023-09-11T03:53:30.701Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "63836ffa-317b-4662-8603-ab71cc1bd942",
+        "name": "Operating Table",
+        "manufacturer": "Best Equipment",
+        "model_number": "13579",
+        "serial_number": "789ABC",
+        "created_at": "2023-09-10T15:51:06.121Z",
+        "updated_at": "2023-09-10T18:56:57.427Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "763e65b5-37c3-4a80-b5ae-9e5d3ff468d3",
+        "quantity": 30190,
+        "purchase_date": "2023-09-10T20:33:35.501Z",
+        "expiry_date": "2023-09-10T13:39:06.178Z",
+        "created_at": "2023-09-10T20:16:27.347Z",
+        "updated_at": "2023-09-10T13:47:31.519Z",
+        "equipment_id": "8183101b-c14d-43cd-819b-32488dce7fce",
+        "supplier_id": "fd979803-5e7f-47d8-bb1b-c2a39295047d"
+      },
+      {
+        "id": "dd853a94-8740-4b85-b2ce-5a15e2809897",
+        "quantity": 2373,
+        "purchase_date": "2023-09-11T05:07:43.136Z",
+        "expiry_date": "2023-09-11T05:13:10.890Z",
+        "created_at": "2023-09-11T05:12:14.338Z",
+        "updated_at": "2023-09-10T12:20:16.791Z",
+        "equipment_id": "63836ffa-317b-4662-8603-ab71cc1bd942",
+        "supplier_id": "f2985489-773f-4600-a2ea-133ea9654c83"
+      },
+      {
+        "id": "d636d6d2-1cea-4d90-a55e-d33a2f699a0d",
+        "quantity": 13468,
+        "purchase_date": "2023-09-10T14:38:40.602Z",
+        "expiry_date": "2023-09-10T07:05:12.121Z",
+        "created_at": "2023-09-11T05:35:58.618Z",
+        "updated_at": "2023-09-11T04:02:54.442Z",
+        "equipment_id": "63836ffa-317b-4662-8603-ab71cc1bd942",
+        "supplier_id": "fd979803-5e7f-47d8-bb1b-c2a39295047d"
+      },
+      {
+        "id": "36c5abaf-121c-45ae-bba0-e2adc1fcac1e",
+        "quantity": 62261,
+        "purchase_date": "2023-09-10T06:03:07.464Z",
+        "expiry_date": "2023-09-10T20:57:43.065Z",
+        "created_at": "2023-09-10T09:47:46.652Z",
+        "updated_at": "2023-09-10T07:35:40.194Z",
+        "equipment_id": "8183101b-c14d-43cd-819b-32488dce7fce",
+        "supplier_id": "20c81049-07af-448b-bd15-72a288c4f1f8"
+      },
+      {
+        "id": "1d54d2fc-c941-4740-b3fb-1824f5331142",
+        "quantity": 59715,
+        "purchase_date": "2023-09-11T03:49:21.628Z",
+        "expiry_date": "2023-09-10T18:35:30.829Z",
+        "created_at": "2023-09-10T21:30:23.264Z",
+        "updated_at": "2023-09-10T21:05:51.526Z",
+        "equipment_id": "63836ffa-317b-4662-8603-ab71cc1bd942",
+        "supplier_id": "3a60382e-1735-4c34-b74b-65c89e495409"
+      }
+    ],
+    "customer": [
+      {
+        "id": "25ab5346-e421-48db-a5a7-125d9b992206",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "john.doe@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T13:53:43.063Z",
+        "updated_at": "2023-09-11T02:56:35.250Z"
+      },
+      {
+        "id": "24c51d55-0581-4cc3-ba3e-ce3d7014c226",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "jane.smith@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T13:52:52.127Z",
+        "updated_at": "2023-09-10T11:01:20.727Z"
+      },
+      {
+        "id": "d298299e-910c-4f70-990e-b1bad7b6f564",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "michael.brown@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-11T02:44:48.494Z",
+        "updated_at": "2023-09-10T22:52:58.646Z"
+      },
+      {
+        "id": "ba1f27eb-275c-4e44-8ec8-78f8f70b5cf7",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "9999999999",
+        "email_address": "sarah.jones@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T08:34:03.944Z",
+        "updated_at": "2023-09-10T10:56:15.445Z"
+      },
+      {
+        "id": "e67074c5-a6af-4676-bc39-86109432332f",
+        "first_name": "Robert",
+        "last_name": "Wilson",
+        "contact_number": "1111111111",
+        "email_address": "robert.wilson@example.com",
+        "address": "987 Maple St",
+        "created_at": "2023-09-10T21:33:39.014Z",
+        "updated_at": "2023-09-10T09:20:41.037Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "6315bded-d52f-4407-923d-17fd704ac5aa",
+        "email": "Odessa66@hotmail.com",
+        "firstName": "Jillian",
+        "lastName": "Hackett",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/84370753",
+        "tenantId": null
+      },
+      {
+        "reference": "af60772b-5dbb-4a08-be82-e169e5077f8b",
+        "email": "Jeffry_Fisher77@hotmail.com",
+        "firstName": "Ottilie",
+        "lastName": "Haley-Spencer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/185.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "17991189-8dff-423c-90ab-fb879b75f8c3",
+        "email": "Hailie13@hotmail.com",
+        "firstName": "Linnea",
+        "lastName": "Boyer-Carter",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/57742486",
+        "tenantId": null
+      },
+      {
+        "reference": "82e8a0f2-d888-425b-bc4c-45d189246fdc",
+        "email": "Keshaun.Flatley34@gmail.com",
+        "firstName": "Enid",
+        "lastName": "Schaden",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/19993666",
+        "tenantId": null
+      },
+      {
+        "reference": "a1dd693c-2719-47a9-bc96-db1fdfb87f77",
+        "email": "Rita.Pfeffer@hotmail.com",
+        "firstName": "Keaton",
+        "lastName": "Daugherty",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/413.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "supplier": [
+      {
+        "id": "a08c8fe8-9ec1-40ba-8dfc-9a29709d09e1",
+        "name": "ABC Supplier",
+        "contact_person": "John Doe",
+        "contact_number": "1234567890",
+        "email_address": "supplier1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-11T04:54:20.813Z",
+        "updated_at": "2023-09-10T17:03:34.324Z"
+      },
+      {
+        "id": "513b5655-8bfc-434e-8bc6-e6c4e11cd9a6",
+        "name": "XYZ Supplier",
+        "contact_person": "Jane Smith",
+        "contact_number": "9876543210",
+        "email_address": "supplier2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T23:54:54.394Z",
+        "updated_at": "2023-09-10T20:20:34.402Z"
+      },
+      {
+        "id": "59340f53-29de-414b-ad6f-5235950dcf99",
+        "name": "123 Supplier",
+        "contact_person": "Michael Brown",
+        "contact_number": "5555555555",
+        "email_address": "supplier3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T07:24:03.635Z",
+        "updated_at": "2023-09-10T21:20:04.803Z"
+      },
+      {
+        "id": "83064880-a894-4d21-936c-21717cee2002",
+        "name": "456 Supplier",
+        "contact_person": "Sarah Jones",
+        "contact_number": "1111111111",
+        "email_address": "supplier4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T05:58:13.032Z",
+        "updated_at": "2023-09-10T07:08:46.721Z"
+      },
+      {
+        "id": "568989d3-63ae-440c-bead-0adf6eaf9326",
+        "name": "789 Supplier",
+        "contact_person": "David Wilson",
+        "contact_number": "9999999999",
+        "email_address": "supplier5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T06:21:34.538Z",
+        "updated_at": "2023-09-10T06:00:14.347Z"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "e74fa1ab-ad51-4614-9500-d74f3c6d1bd5",
+        "name": "Equipment A",
+        "manufacturer": "Manufacturer A",
+        "model_number": "12345",
+        "serial_number": "ABC123",
+        "created_at": "2023-09-10T14:31:55.448Z",
+        "updated_at": "2023-09-11T00:20:39.329Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "c33784c2-bad2-43b2-b476-5b943306b149",
+        "name": "Equipment B",
+        "manufacturer": "Manufacturer B",
+        "model_number": "67890",
+        "serial_number": "DEF456",
+        "created_at": "2023-09-10T22:38:31.241Z",
+        "updated_at": "2023-09-10T11:21:31.510Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "bd60eb85-4ea1-40e3-85f2-5f23dce2eae3",
+        "name": "Equipment C",
+        "manufacturer": "Manufacturer C",
+        "model_number": "54321",
+        "serial_number": "GHI789",
+        "created_at": "2023-09-10T18:09:00.896Z",
+        "updated_at": "2023-09-10T17:13:40.695Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "e56ea6c0-6a18-4dbf-aa28-2e66911cae4e",
+        "name": "Equipment D",
+        "manufacturer": "Manufacturer D",
+        "model_number": "09876",
+        "serial_number": "JKL012",
+        "created_at": "2023-09-10T17:07:38.519Z",
+        "updated_at": "2023-09-10T06:05:27.775Z",
+        "hospital_id": "main_entity_pk"
+      },
+      {
+        "id": "645888cc-1c6a-4932-8c06-ecc7d9caf334",
+        "name": "Equipment E",
+        "manufacturer": "Manufacturer E",
+        "model_number": "13579",
+        "serial_number": "MNO345",
+        "created_at": "2023-09-10T20:50:39.630Z",
+        "updated_at": "2023-09-10T13:46:43.751Z",
+        "hospital_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "48200189-d36c-43c1-8e6b-2c88c9baabdb",
+        "quantity": 11447,
+        "purchase_date": "2023-09-11T01:02:30.434Z",
+        "expiry_date": "2023-09-10T15:08:56.027Z",
+        "created_at": "2023-09-11T03:23:12.650Z",
+        "updated_at": "2023-09-10T13:17:15.076Z",
+        "equipment_id": "c33784c2-bad2-43b2-b476-5b943306b149",
+        "supplier_id": "a08c8fe8-9ec1-40ba-8dfc-9a29709d09e1"
+      },
+      {
+        "id": "85900c72-32c0-4fa4-a3aa-0b747ea2a762",
+        "quantity": 38627,
+        "purchase_date": "2023-09-10T07:15:54.758Z",
+        "expiry_date": "2023-09-11T00:15:12.301Z",
+        "created_at": "2023-09-10T19:38:17.388Z",
+        "updated_at": "2023-09-10T06:34:26.427Z",
+        "equipment_id": "645888cc-1c6a-4932-8c06-ecc7d9caf334",
+        "supplier_id": "59340f53-29de-414b-ad6f-5235950dcf99"
+      },
+      {
+        "id": "f8e75672-f623-4897-8655-163b1dd9cfd4",
+        "quantity": 28504,
+        "purchase_date": "2023-09-10T09:53:25.538Z",
+        "expiry_date": "2023-09-10T18:12:56.083Z",
+        "created_at": "2023-09-10T11:03:52.250Z",
+        "updated_at": "2023-09-10T12:32:26.822Z",
+        "equipment_id": "645888cc-1c6a-4932-8c06-ecc7d9caf334",
+        "supplier_id": "568989d3-63ae-440c-bead-0adf6eaf9326"
+      },
+      {
+        "id": "8b104501-ef7b-435c-b362-0658c518d0f4",
+        "quantity": 7151,
+        "purchase_date": "2023-09-11T04:31:27.176Z",
+        "expiry_date": "2023-09-10T09:02:49.242Z",
+        "created_at": "2023-09-10T06:21:00.802Z",
+        "updated_at": "2023-09-11T02:18:57.831Z",
+        "equipment_id": "e74fa1ab-ad51-4614-9500-d74f3c6d1bd5",
+        "supplier_id": "59340f53-29de-414b-ad6f-5235950dcf99"
+      },
+      {
+        "id": "30b994cf-090d-4431-8d78-37c3c09248da",
+        "quantity": 27507,
+        "purchase_date": "2023-09-10T11:55:31.794Z",
+        "expiry_date": "2023-09-11T04:44:01.094Z",
+        "created_at": "2023-09-11T03:02:52.771Z",
+        "updated_at": "2023-09-10T13:15:55.596Z",
+        "equipment_id": "e56ea6c0-6a18-4dbf-aa28-2e66911cae4e",
+        "supplier_id": "513b5655-8bfc-434e-8bc6-e6c4e11cd9a6"
+      }
+    ],
+    "customer": [
+      {
+        "id": "30cb6cb9-30fe-4ba8-ae67-c47a8e272bcf",
+        "first_name": "John",
+        "last_name": "Doe",
+        "contact_number": "1234567890",
+        "email_address": "customer1@example.com",
+        "address": "123 Main St",
+        "created_at": "2023-09-10T13:36:31.966Z",
+        "updated_at": "2023-09-11T01:33:41.711Z"
+      },
+      {
+        "id": "2b7dfa56-b0b9-4f5f-b925-7009f77e546e",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "contact_number": "9876543210",
+        "email_address": "customer2@example.com",
+        "address": "456 Elm St",
+        "created_at": "2023-09-10T22:46:12.979Z",
+        "updated_at": "2023-09-10T14:58:18.749Z"
+      },
+      {
+        "id": "85850cba-af4c-4a12-af16-ad3cf007be67",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "contact_number": "5555555555",
+        "email_address": "customer3@example.com",
+        "address": "789 Oak St",
+        "created_at": "2023-09-10T07:09:50.537Z",
+        "updated_at": "2023-09-10T19:55:36.904Z"
+      },
+      {
+        "id": "006219e9-3bd7-4d37-a759-f692defb3071",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "contact_number": "1111111111",
+        "email_address": "customer4@example.com",
+        "address": "321 Pine St",
+        "created_at": "2023-09-10T15:02:52.698Z",
+        "updated_at": "2023-09-10T10:47:27.110Z"
+      },
+      {
+        "id": "9d0c03f2-b220-4738-9194-bdefed5331e5",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "contact_number": "9999999999",
+        "email_address": "customer5@example.com",
+        "address": "654 Maple St",
+        "created_at": "2023-09-10T11:24:13.179Z",
+        "updated_at": "2023-09-10T23:08:28.781Z"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "826be132-8004-40ff-9003-803d681cee2b",
+        "email": "Jimmy22@gmail.com",
+        "firstName": "Fidel",
+        "lastName": "Ward",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/65590378",
+        "tenantId": null
+      },
+      {
+        "reference": "a7610f1d-f158-47e6-b1cf-3409cf8f5702",
+        "email": "Paris17@yahoo.com",
+        "firstName": "Lyda",
+        "lastName": "Metz-Moen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/65096106",
+        "tenantId": null
+      },
+      {
+        "reference": "a4e1c641-1fcf-487c-bde2-c090e0cf468a",
+        "email": "Oma.Hodkiewicz18@hotmail.com",
+        "firstName": "Eleonore",
+        "lastName": "Anderson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1248.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3a6a598f-3356-4200-8ac2-4c9fc5c8c384",
+        "email": "Bria.Wolff@gmail.com",
+        "firstName": "Marcelo",
+        "lastName": "Schmidt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/165.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b2d14ea3-a60e-4528-aea0-3a45b23de746",
+        "email": "Foster88@gmail.com",
+        "firstName": "Kelley",
+        "lastName": "Crona",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/24019508",
+        "tenantId": null
+      }
+    ]
+  }
+]
